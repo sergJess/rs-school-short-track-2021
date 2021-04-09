@@ -34,7 +34,7 @@ function isMAC48Address(mac) {
     };
     const splitArray = mac.split('-');
     for (let i = 0; i < splitArray.length; i++) {
-      if (!Object.prototype.hasOwnProperty.call(template, splitArray[i])) {
+      if (!Object.prototype.hasOwnProperty.call(template, splitArray[i][0], splitArray[i][1])) {
         return false;
       }
     }
