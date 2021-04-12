@@ -14,7 +14,7 @@
  *
  * The result should be 9
  */
-function getMatrixElementsSum(matrix ) {
+function getMatrixElementsSum(matrix) {
   if (Array.isArray(matrix)) {
     const zero = 0;
     let sum = 0;
